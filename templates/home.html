@@ -15,7 +15,8 @@
     <h1>Hello World this is {{name}}</h1>
     <h4>From template file location !!!</h4>
 
-    <form action="add">
+    <form action="add" method="POST">
+        {% csrf_token%}
         Enter 1st number : <input type="number" name="num1"> <br>
         
         Enter 2nd number : <input type="number" name="num2"> <br> 

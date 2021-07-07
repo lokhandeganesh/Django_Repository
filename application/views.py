@@ -12,8 +12,8 @@ def home(request):
     return render(request,'home.html',{'name':'Ganesh'})    
 
 def add(request):
-    val1 = request.GET["num1"]
-    val2 = request.GET["num2"]
+    val1 = request.POST["num1"]
+    val2 = request.POST["num2"]
     
     res = float(val1) + float(val2)
     return render(request,"results.html",{"result":res})
