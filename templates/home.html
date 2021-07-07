@@ -1,15 +1,30 @@
-{% extends 'base.html'%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+</head>
+<body>
 
-{% block content %}
+    {% extends 'base.html'%}
 
-<h1>Hello World this is {{name}}</h1>
-<h4>From template file location !!!</h4>
+    {% block content %}
 
-<form action="">
-    Enter 1st number : <input type="number" name="num1"> <br>
-    
-    Enter 2nd number : <input type="number" name="num2"> <br> 
+    <h1>Hello World this is {{name}}</h1>
+    <h4>From template file location !!!</h4>
 
-    <input type="submit" >
-</form>
-{% endblock%}
+    <form action="add">
+        Enter 1st number : <input type="number" name="num1"> <br>
+        
+        Enter 2nd number : <input type="number" name="num2"> <br> 
+
+        <input type="submit" >
+    </form>
+    {% endblock%}
+
+
+</body>
+</html>
+
