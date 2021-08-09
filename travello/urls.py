@@ -5,6 +5,6 @@ from . import views
 
 # set url patern for home/index page#
 urlpatterns = [
-    path("",views.index,name='index'),
-    
+    path("",views.index,name='index'),  
+    path("about",views.about,name='about'),
 ]
